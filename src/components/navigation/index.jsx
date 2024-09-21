@@ -11,7 +11,7 @@ const index = () => {
       <div className="flex items-center justify-between relative">
         {BtnList.map((btn, index) => {
           const angleRadian = (index * angleIncrement * Math.PI) / 180;
-          const radius = "calc(20vw - 1rem)*1.5";
+          const radius = "calc(20vw - 1rem)";
           const x = `calc(${radius}*${Math.cos(angleRadian)})`;
           const y = `calc(${radius}*${Math.sin(angleRadian)})`;
           console.log({ x, y, index, angleIncrement, angleRadian });
