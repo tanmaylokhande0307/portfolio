@@ -12,7 +12,7 @@ const Wizard = React.memo(function Wizard(props) {
 
   const modelRef = useRef();
   useFrame((state,delta,xrframe)=>{
-    modelRef.current.position.y = Math.sin(state.clock.elapsedTime)
+    modelRef.current.position.y = -1.5 + Math.sin(state.clock.elapsedTime)*0.15
   })
 
 
@@ -20,7 +20,7 @@ const Wizard = React.memo(function Wizard(props) {
     <group
       {...props}
       dispose={null}
-      position={[0,-1.5,0]}
+      position={[0.4,-1.5,0]}
       scale={[0.06,0.06,0.06]}
       rotation={[0.25,0,0]}
       ref={modelRef}

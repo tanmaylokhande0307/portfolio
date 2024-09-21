@@ -16,6 +16,11 @@ module.exports = {
         muted: "rgb(var(--muted))",
         accent: "rgb(var(--accent))",
       },
+      boxShadow:{
+        'glass-inset': "inset 0 17px 5px -9px rgba(254,254,91,0.05)",
+        'glass-sm': "2px 4px 20px 10px rgba(254,254,91, 0.3)"
+
+      }
     },
   },
   plugins: [],
