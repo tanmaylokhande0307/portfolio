@@ -7,7 +7,7 @@ const index = () => {
   const angleIncrement = 360 / BtnList.length;
 
   return (
-    <div className="fixed w-full h-screen flex items-center justify-center z-50">
+    <div className="fixed w-full h-screen flex items-center justify-center z-50 animate-spin-slow group">
       <div className="flex items-center justify-between relative">
         {BtnList.map((btn, index) => {
           const angleRadian = (index * angleIncrement * Math.PI) / 180;
